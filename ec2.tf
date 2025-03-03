@@ -7,3 +7,12 @@ resource "aws_instance" "webserver1" {
     Name = "Webserver1"
   }
 }
+
+resource "aws_s3_bucket" "example" {
+  bucket = "kjdsgfsdklgsdfkgsdfkgjsdfgjk"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
